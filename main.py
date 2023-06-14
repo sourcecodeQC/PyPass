@@ -35,4 +35,15 @@ while(True):
     else:
         print("Please pick a valid option!")
 
+password = []
+
+for i in range (lenght):
+    #rand char
+    randomchar = random.choice(characterList)
+
+    #append passwd with rand
+    password.append(randomchar)
+
+print('''Random generated password is: 
+      ''' + "".join(password))
 
