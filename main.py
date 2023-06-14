@@ -13,4 +13,26 @@ print('''Choose character set for password from these:
 
 characterList = ""
 
+#char set for rand passwd
+while(True):
+    charChoice = int(input("Pick an option: "))
+    if(charChoice <= 4):
+        match charChoice:
+            case 1:
+                characterList += string.ascii_letters
+                #ascii letters to possible characters
+
+            case 2:
+                characterList += string.digits
+                #digits to possible char
+
+            case 3:
+                characterList += string.punctuation
+                #spec char to possible char
+
+            case 4:
+                break
+    else:
+        print("Please pick a valid option!")
+
 
